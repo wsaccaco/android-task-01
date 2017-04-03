@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DevServices</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name_service_aws">Servicio en AWS</string>
+    <string name="name_service_js">Developer Javascript</string>
+    <string name="name_service_android">Desarrollador Android</string>
+    <string name="name_service_ios">Desarrollador iOS</string>
+
+    <string name="description_aws">Amazon Web Services ofrece un amplio conjunto de productos globales basados en la nube,
+        incluidas aplicaciones de informática, almacenamiento, bases de datos, análisis, redes, móviles,
+        herramientas para desarrolladores, herramientas de administración, IoT, seguridad y empresariales</string>
+    <string name="description_js">Javascript es un lenguaje de programación que se puede utilizar para construir sitios Web y para hacerlos más interactivos.</string>
+    <string name="description_android">Desarrollamos aplicaciones móviles para Android.
+Contamos con un equipo preparado para atender las necesidades de nuestros clientes.</string>
+    <string name="description_ios">Las aplicaciones nativas o stock apps son una constante en cualquier sistema operativo y las plataformas móviles no se libran. Hace unos días Apple nos sorprendió cuando confirmó que su próxima gran actualización, iOS 10</string>
+
+
+    <string name="experience_years_aws">5 años</string>
+    <string name="experience_years_js">10 años</string>
+    <string name="experience_years_android">6 años</string>
+    <string name="experience_years_ios">5 años</string>
+
+    <string name="experience_proyects_aws">15 Proyectos</string>
+    <string name="experience_proyects_js">35 Proyectos</string>
+    <string name="experience_proyects_android">24 Proyectos</string>
+    <string name="experience_proyects_ios">23 Proyectos</string>
+
+
+    <string name="experience_coorps_aws">google idteam elcomercio</string>
+    <string name="experience_coorps_js">idteam elcorreo trome</string>
+    <string name="experience_coorps_android">IBM Microsoft LuisPipo</string>
+    <string name="experience_coorps_ios">AdventureSC Minsa Samsung</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_icon">IconActivity</string>
+</resources>
