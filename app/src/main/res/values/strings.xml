@@ -35,4 +35,5 @@ Contamos con un equipo preparado para atender las necesidades de nuestros client
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
     <string name="title_activity_icon">IconActivity</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

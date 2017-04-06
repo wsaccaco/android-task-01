@@ -1,5 +1,6 @@
 package pe.edu.upc.devservice;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,12 +25,27 @@ public class IconActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton btnFloatMap = (FloatingActionButton) findViewById(R.id.btnFloatMap);
+        final int position = getIntent().getExtras().getInt("currentPosition");
+
+        btnFloatMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Bundle bundle = new Bundle();
+                bundle.putInt("currentPosition", position);
+
+                Intent intent = new Intent(IconActivity.this, MapsActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+
+
+//                Intent iconIntent = new Intent(view.getContext(), IconActivity.class);
+//                iconIntent.putExtras(bundle);
+//                view.getContext().startActivity(iconIntent);
+
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -41,8 +57,8 @@ public class IconActivity extends AppCompatActivity {
         pictureImageView = (ImageView) findViewById(R.id.pictureImageView);
         ItemService service = new ItemService(this);
 
-        Item item =
-                service.getItems().get(getIntent().getExtras().getInt("currentPosition"));
+        Item item = service.getItems().get(position);
+
         nameTextView.setText(item.getName());
         experienciaAniosTextView.setText(item.getYear());
         experienciaProyectosTextView.setText(item.getProyects());
